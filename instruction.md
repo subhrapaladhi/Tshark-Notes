@@ -34,4 +34,7 @@ The FF02::FB is probably a portion of an IPv6 ip address. 224.* is a multicast "
 
 
 ## TCP Handshake
-![TCP Handshake example]("./tcpHandshake.png")
+![TCP Handshake example](Images/tcpHandshake.png)
+public ip of Opensource.com: 54.204.39.132
+
+You can view the three packets below. The first packet sends a SYN request from my laptop to the Opensource.com server. The second packet is the Opensource.com server replying with a SYN, ACK flag set. Finally, the third packet is my laptop sending an ACK request to acknowledge receiving the second packet. This is called a TCP handshake. After this handshake, both nodes (i.e., my laptop and the Opensource.com server) can exchange data.
