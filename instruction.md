@@ -7,14 +7,14 @@ The “ifconfig” command with no arguments will display all the active interfa
 The ifconfig command with -a argument will display information of all active or inactive network interfaces on server. 
 
 ## View a specific network interface
-### ifconfig <interface name>
+### ifconfig < interface name >
 eg: ```ifconfig wlp2s0```
 
 ## Get your public IP
 ### wget -qO- ifconfig.me
 
 ## Monitor packets on a network interface
-### sudo tshark -i <interface name>
+### sudo tshark -i < interface name >
 eg: ```sudo tshark -i wlp2s0```
 
 ## Install bind-utils
@@ -24,7 +24,7 @@ eg: ```sudo tshark -i wlp2s0```
 ```cat /etc/resolv.conf```
 
 ## nslookup
-### nslookup <domin>
+### nslookup < domin >
 eg: ```nslookup textsummarizer.subhrapaladhi.com```
 
 ## Question: 
@@ -46,3 +46,6 @@ This time FIN, ACK packet to Opensource.com (in packet 1 below), followed by a F
 ## Encrypt handshake
 ![Encrypt Handshake](Images/EncryptHandshake.png)
 The TCP handshake concludes in the first three packets, and the fourth to the ninth have various packets that have TLS strings, which follow a similar handshake ritual to set up a secure, encrypted connection between the two hosts
+
+## View the Entire Packet
+### sudo tshark -i < network interface > -V
